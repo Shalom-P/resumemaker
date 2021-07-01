@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resume"
+    android:background="@drawable/gradient">
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="289dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="100dp"
+        android:layout_toRightOf="@+id/imageView"
+        app:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jobtitleTextview"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintBottom_toBottomOf="@+id/divider3"
+        app:layout_constraintEnd_toStartOf="@+id/emailview"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/emailview"
+        android:layout_width="159dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/phonenum"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/phonenum"
+        android:layout_width="159dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="15dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emailview" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-16dp" />
+
+    <TextView
+        android:id="@+id/textskills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="SKILLS"
+        android:textColor="#40301B"
+        android:textStyle="bold"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <LinearLayout
+        android:id="@+id/skillslayoutt"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/divider6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textskills"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/texthobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="HOBBIES"
+        android:textStyle="bold"
+        android:textColor="#40301B"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintEnd_toStartOf="@+id/divider6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillslayoutt" />
+
+    <LinearLayout
+        android:id="@+id/layouthobbiesd"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texthobbies" />
+
+    <TextView
+        android:id="@+id/textlanguage"
+        android:layout_width="72dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="24dp"
+        android:text="LANGUAGES"
+        android:textSize="8sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="#40301B"
+        android:textStyle="bold"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintEnd_toStartOf="@+id/divider6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layouthobbiesd" />
+    <LinearLayout
+        android:id="@+id/layoutlanguagessd"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textlanguage" />
+
+    <TextView
+        android:id="@+id/textaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/biryani"
+        android:text="ADDRESS"
+        android:textColor="#40301B"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/addresstextview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutlanguagessd"
+        app:layout_constraintVertical_bias="0.732" />
+
+    <TextView
+        android:id="@+id/addresstextview"
+        android:layout_width="96dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintEnd_toStartOf="@+id/divider6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textaddress" />
+
+    <TextView
+        android:id="@+id/introductiontextview"
+        android:layout_width="263dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/Educationtv"
+        android:layout_width="263dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        android:text="EDUCATIONAL DETAILS"
+        android:textStyle="bold"
+        android:textColor="#40301B"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/introductiontextview" />
+
+    <TextView
+        android:id="@+id/textViewUG"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:autoSizeTextType="uniform"
+        android:text="ENGINEERING"
+        android:textColor="#40301B"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/Educationtv" />
+
+    <TextView
+        android:id="@+id/ugstart"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/textViewUG"
+        app:layout_constraintTop_toBottomOf="@+id/Educationtv" />
+
+    <TextView
+        android:id="@+id/ugend"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/Educationtv" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="16dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/ugstart"
+        app:layout_constraintTop_toBottomOf="@+id/Educationtv" />
+
+    <TextView
+        android:id="@+id/ugmarks"
+        android:layout_width="263dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/ugstart" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:autoSizeTextType="uniform"
+        android:text="12TH CLASS"
+        android:fontFamily="@font/biryani"
+        android:textColor="#40301B"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/ugmarks" />
+
+    <TextView
+        android:id="@+id/t12STTart"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="4dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/ugmarks" />
+
+    <TextView
+        android:id="@+id/textViewdash1"
+        android:layout_width="16dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/t12STTart"
+        app:layout_constraintTop_toBottomOf="@+id/ugmarks" />
+
+    <TextView
+        android:id="@+id/t12ENd"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/textViewdash1"
+        app:layout_constraintTop_toBottomOf="@+id/ugmarks" />
+
+    <TextView
+        android:id="@+id/t12MArks"
+        android:layout_width="263dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/t12STTart" />
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:autoSizeTextType="uniform"
+        android:text="10TH CLASS"
+        android:textColor="#40301B"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/t12MArks" />
+    <TextView
+        android:id="@+id/t10STTart"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="4dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/t12MArks" />
+    <TextView
+        android:id="@+id/textViewdash10"
+        android:layout_width="16dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/black"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/t10STTart"
+        app:layout_constraintTop_toBottomOf="@+id/t12MArks" />
+    <TextView
+        android:id="@+id/t10ENd"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/textViewdash10"
+        app:layout_constraintTop_toBottomOf="@+id/t12MArks" />
+    <TextView
+        android:id="@+id/t10MArks"
+        android:layout_width="263dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/t10STTart" />
+
+
+    <TextView
+        android:id="@+id/projecttv"
+        android:layout_width="263dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        android:text="PROJECT DETAILS"
+        android:textColor="#40301B"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/t10MArks" />
+
+    <LinearLayout
+        android:id="@+id/layoutproject"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/projecttv" />
+
+    /
+
+    <TextView
+        android:id="@+id/achtv"
+        android:layout_width="263dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/biryani"
+        android:text="ACHIEVEMENTS DETAILS"
+        android:textColor="#40301B"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/layoutproject" />
+
+    <LinearLayout
+        android:id="@+id/layoutachievement"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/achtv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

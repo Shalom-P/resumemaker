@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="false"
+        android:background="#595656"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/biryani"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:fontFamily="@font/biryani"
+            android:hint="Enter Your Address"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/jobtitlev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Address"
+            android:fontFamily="@font/biryani"
+            android:hint="Job TITLE/POSITION"
+            android:inputType="text"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobtitlev"
+            android:fontFamily="@font/biryani"
+            android:hint="Email id"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailid"
+            android:fontFamily="@font/biryani"
+            android:hint="Phone number"
+            android:inputType="number"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phonenum"
+            android:fontFamily="@font/biryani"
+            android:hint="give your indroduction"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/skillstext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intro"
+            android:fontFamily="@font/biryani"
+            android:text="Your Skills"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/skillslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skillstext"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btn_skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skillslayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_awesome"
+            android:fontFamily="@font/biryani"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ADD SKILLS"
+            app:backgroundTint="@color/black" />
+
+
+        <TextView
+            android:id="@+id/UG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_skills"
+            android:fontFamily="@font/biryani"
+            android:text="UG program details"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/UGstart"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UG"
+            android:fontFamily="@font/biryani"
+            android:hint="start year"
+            android:inputType="date"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/UGend"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UG"
+            android:layout_marginLeft="@android:dimen/app_icon_size"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/UGstart"
+            android:fontFamily="@font/biryani"
+            android:hint="End year"
+            android:inputType="date"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/marks"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UG"
+            android:layout_marginLeft="@android:dimen/app_icon_size"
+            android:layout_toRightOf="@+id/UGend"
+            android:fontFamily="@font/biryani"
+            android:hint="MARKS"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/t12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UGstart"
+            android:fontFamily="@font/biryani"
+            android:text="12th/PUC"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/t12start"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t12"
+            android:fontFamily="@font/biryani"
+            android:hint="start year"
+            android:inputType="date"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/t12end"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t12"
+            android:layout_marginLeft="@android:dimen/app_icon_size"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/t12start"
+            android:fontFamily="@font/biryani"
+            android:hint="End year"
+            android:inputType="date"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/t12marks"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t12"
+            android:layout_marginLeft="@android:dimen/app_icon_size"
+            android:layout_toRightOf="@+id/t12end"
+            android:fontFamily="@font/biryani"
+            android:hint="MARKS"
+            android:inputType="number"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/tenth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t12start"
+            android:fontFamily="@font/biryani"
+            android:text="10th Class"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tenthstart"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tenth"
+            android:fontFamily="@font/biryani"
+            android:hint="start year"
+            android:inputType="date"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/tenthend"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tenth"
+            android:layout_marginLeft="@android:dimen/app_icon_size"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/tenthstart"
+            android:fontFamily="@font/biryani"
+            android:hint="End year"
+            android:inputType="date"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/tenthmarks"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tenth"
+            android:layout_marginLeft="@android:dimen/app_icon_size"
+            android:layout_toRightOf="@+id/tenthend"
+            android:fontFamily="@font/biryani"
+            android:hint="MARKS"
+            android:inputType="number"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/langt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tenthstart"
+            android:fontFamily="@font/biryani"
+            android:text="Languages Known"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/languageslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/langt"
+            android:fontFamily="@font/biryani"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/languageslayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_awesome"
+            android:fontFamily="@font/biryani"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ADD LANGUAGE"
+            app:backgroundTint="@color/black" />
+
+        <TextView
+            android:id="@+id/hobbiestext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_add"
+            android:fontFamily="@font/biryani"
+            android:text="Enter your Hobbies"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/hobbieslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hobbiestext"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btn_hobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hobbieslayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_awesome"
+            android:fontFamily="@font/biryani"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ADD HOBBIES"
+            app:backgroundTint="@color/black" />
+
+        <EditText
+            android:id="@+id/linkedinlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_hobbies"
+            android:fontFamily="@font/biryani"
+            android:hint="Enter your linked in profile link"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/githublink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linkedinlink"
+            android:fontFamily="@font/biryani"
+            android:hint="Enter your github profile link"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/projecttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/githublink"
+            android:fontFamily="@font/biryani"
+            android:text="Your project details"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/projectLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/projecttext"
+            android:fontFamily="@font/biryani"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btn_projects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/projectLayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_awesome"
+            android:fontFamily="@font/biryani"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ADD PROJECTS"
+            app:backgroundTint="#120B01" />
+
+        <TextView
+            android:id="@+id/achievetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_projects"
+            android:fontFamily="@font/biryani"
+            android:text="Enter Your Achievements"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/achievelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/achievetext"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btn_achieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/achievelayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_awesome"
+            android:fontFamily="@font/biryani"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ADD ACHIEVEMENTS"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/btn_resume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_achieve"
+            android:fontFamily="@font/biryani"
+            android:text="GET RESUME"
+            app:backgroundTint="#2E210E" />
+
+
+    </RelativeLayout>
+</ScrollView>
